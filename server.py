@@ -8,7 +8,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         self.send_response(HTTPStatus.OK)
         self.end_headers()
-        self.wfile.write(b'Hello world! Heroku!')
+        self.wfile.write(b'GoCD -> Hello world! Heroku!')
 
 
 try:
